@@ -2,8 +2,15 @@
 <html lang="en">
   <head>
     <title>New Year</title>
+    {% load static %}
+    <link href="{% static 'newyear/style.css' %}" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
+    {% if newyear %}
     <h1>Happy New Year!</h1>
+    {% else%}
+    <div><h1>Not a New Year!</h1></div>
+    {% endif %}
   </body>
 </html>
