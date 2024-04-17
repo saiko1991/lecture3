@@ -20,4 +20,5 @@ from django.urls import path,include
 urlpatterns = [
     path('hello/',include("hello.url")), #This the app url located at (/hello/url.py)
     path('admin/', admin.site.urls),
+    path('newyear/', include("newyear.urls")),
 ]
