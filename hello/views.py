@@ -5,3 +5,12 @@ from django.shortcuts import render
 
 def index(request):
     return HttpResponse("Hello, world!")
+
+def sai(request):
+    return HttpResponse("Hello, Sai!")
+
+def ebo(request):
+    return HttpResponse("<h1> Hello, Ebo! </h1>")
+
+def greet(request, name):
+    return HttpResponse(f"<h1>Hello, {name.capitalize()}!</h1>")
