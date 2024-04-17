@@ -21,4 +21,5 @@ urlpatterns = [
     path('hello/',include("hello.url")), #This the app url located at (/hello/url.py)
     path('admin/', admin.site.urls),
     path('newyear/', include("newyear.urls")),
+    path('tasks/', include("tasks.urls")),
 ]
